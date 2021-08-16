@@ -75,7 +75,7 @@
       const profile = await liff.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl
       document.getElementById("userId").append(profile.userId)
-      document.getElementById("statusMessage").append(profile.stastusMessage)
+      document.getElementById("statusMessage").append(profile.statusMessage)
       document.getElementById("displayName").append(profile.displayName)
     }
 
@@ -83,7 +83,7 @@
       document.getElementById("os").append(liff.getOS())
       document.getElementById("language").append(liff.getLanguage())
       document.getElementById("version").append(liff.getVersion())
-      document.getElementById("accessToken").append(liff.getAccessToen)
+      document.getElementById("accessToken").append(liff.getAccessToken)
       document.getElementById("isInClient").append(liff.isInClient())
       if(liff.isInClient()){
         Document.getElementById("bntLogOut").style.display = "none"
