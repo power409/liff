@@ -85,8 +85,8 @@
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken)
       document.getElementById("isInClient").append(liff.isInClient())
-      if(liff.isInClient()){
-        Document.getElementById("bntLogOut").style.display = "none"
+      if (liff.isInClient()) {
+        document.getElementById("bntLogOut").style.display = "none"
         }else {
           document.getElementById("btnMsg").style.display = "none"
           document.getElementById("btnScanCode").style.display = "none"
