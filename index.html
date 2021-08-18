@@ -56,8 +56,88 @@
     async function shareMsg() {
         await liff.shareTargetPicker([
             {
-                "type": "text",
-                "text": "This message was sent by ShareTargetPicker"
+                type: "text",
+                altText: "Flex Message from Share Target Picker",
+                contents: {
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://lh3.googleusercontent.com/UIPfihAGGIjN97-ddZ_YnFdFYhp28brQRkD8-EJcJoOP7Hofbd5esYGVtlRWYyi1I4skeHbUH-pUEu5V=w1080-h608-p-no-v0",
+        "size": "full",
+        "aspectRatio": "16:9",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://kongsalak.com/member?id=3ciugq"
+        }
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "** 80 บาททุกใบ เลือกเลขได้เอง ",
+        "margin": "sm",
+        "size": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://kongsalak.com/member?id=3ciugq"
+        }
+      },
+      {
+        "type": "text",
+        "text": "** ซื้อผ่านมือถือง่ายๆ ไม่ต้องเสี่ยงโควิด",
+        "margin": "sm",
+        "size": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://kongsalak.com/member?id=3ciugq"
+        }
+      },
+      {
+        "type": "text",
+        "text": "** ถูกรางวัล!!  รับเงินใน 30 นาที ไม่หัก 2%",
+        "margin": "sm",
+        "size": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://kongsalak.com/member?id=3ciugq"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "คลิก!! เพื่อค้นหาเลข",
+          "uri": "https://kongsalak.com/member?id=3ciugq"
+        },
+        "height": "sm",
+        "style": "secondary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แชร์ให้เพื่อน",
+          "uri": "https://power409.github.io/liff/?cache=12345678"
+        },
+        "height": "sm",
+        "style": "primary"
+      }
+    ]
+  }
+}
             }
         ])
     }
